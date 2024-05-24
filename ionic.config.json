@@ -1,0 +1,7 @@
+{
+  "name": "loaderapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
