@@ -8,10 +8,11 @@
 
 <ion-content>
   <ion-button (click)="showLoader()">Start Loading</ion-button>
+  <!-- <img src="assets/img/series1/image1.jpg" alt="calores"> -->
   <app-loader *ngIf="loading" 
               [imagesSet1]="series1" 
               [imagesSet2]="series2" 
               [interval]="3000" 
-              [useSet1]="useSet1">
+              [useSet1]="false">
   </app-loader>
 </ion-content>

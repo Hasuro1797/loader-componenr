@@ -1,10 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import {IonicModule} from '@ionic/angular'
 
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss'],
   standalone: true,
+  imports:[CommonModule, IonicModule]
 })
 export class LoaderComponent  implements OnInit {
   @Input() imagesSet1: { src: string, text: string }[] = [];
@@ -13,7 +16,7 @@ export class LoaderComponent  implements OnInit {
   @Input() useSet1: boolean = true;
 
   currentIndex: number = 0;
-  currentImage: { src: string, text: string };
+  currentImage: { src: string; text: string; } | undefined;
 
 
   startLoader() {
