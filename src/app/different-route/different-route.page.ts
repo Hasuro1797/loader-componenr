@@ -6,7 +6,6 @@ import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/stan
 @Component({
   selector: 'app-different-route',
   templateUrl: './different-route.page.html',
-  styleUrls: ['./different-route.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
@@ -15,6 +14,7 @@ export class DifferentRoutePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("I'm other page")
   }
 
 }
